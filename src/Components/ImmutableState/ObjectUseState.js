@@ -21,14 +21,14 @@ function ObjectUseState() {
         const newPerson = {}
         console.log(newPerson)
         console.log(newPerson.fname)
-        
+
 
         newPerson.fname = 'Krishna'
         console.log(newPerson.fname)
         newPerson.lname = 'Radha'
 
         setPerson(newPerson)
-    
+
 
 
     }
