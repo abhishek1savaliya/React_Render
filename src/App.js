@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import UseState from './Components/UseState';
+import UseReducer from './Components/UseReducer/UseReducer';
 
 function App() {
   return (
     <div className="App">
-    <UseState />
+      <UseReducer />
+    {/* <UseState /> */}
     </div>
   );
 }
