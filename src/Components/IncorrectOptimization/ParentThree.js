@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ChildThree from './ChildThree';
+import { MemorizeChildFour } from './ChildFour';
 
 const ParentThree = () => {
     const [count, setCount] = useState(0);
@@ -11,8 +12,9 @@ const ParentThree = () => {
             <button onClick={() => setCount(c => c + 1)}>Count - {count}</button>
             <button onClick={() => setName('Radha')}>Change Name</button>
             <div>
-                <ChildThree name={name}>
-                    <strong>Hello</strong></ChildThree>
+                <MemorizeChildFour name={name} />
+                {/* <ChildThree name={name}>
+                    <strong>Hello</strong></ChildThree> */}
             </div>
         </div>
     );
