@@ -1,20 +1,20 @@
-import React, { useState,useMemo,useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { MemorizedChildFive } from './ChildFive';
 
 const ParentFour = () => {
     const [count, setCount] = useState(0);
     const [name, setName] = useState('Krishna');
-    
+
     const person = {
-        fname  : 'Jagannath',
-        lname : 'Mohanam'
-    } 
+        fname: 'Jagannath',
+        lname: 'Mohanam'
+    }
     // const memorizePerson = useMemo(()=>person,[])
-    
+
 
     console.log('ParentFour Render');
 
-    const handleClick = ()=>{ }
+    const handleClick = () => { }
     const memorizeHandleClick = useCallback(handleClick, [])
 
     return (
